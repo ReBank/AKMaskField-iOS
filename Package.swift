@@ -21,5 +21,6 @@ let package = Package(
         .testTarget(
             name: "AKMaskField-iOSTests",
             dependencies: ["AKMaskField-iOS"]),
-    ]
+    ],
+    swiftLanguageVersions: [.v4]
 )
