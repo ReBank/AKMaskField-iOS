@@ -16,7 +16,7 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "AKMaskField-iOS",
-            dependencies: ["Sources"]
+            dependencies: ["AKMaskField-iOS"]
         ),
         .testTarget(
             name: "AKMaskField-iOSTests",
