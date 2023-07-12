@@ -4,21 +4,22 @@
 import PackageDescription
 
 let package = Package(
-    name: "AKMaskField-iOS",
+    name: "AKMaskField",
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "AKMaskField-iOS",
-            targets: ["AKMaskField-iOS"]),
+            name: "AKMaskField",
+            targets: ["AKMaskField"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "AKMaskField-iOS"
+            name: "AKMaskField",
+            dependencies: ["AKMaskField"]
         ),
         .testTarget(
-            name: "AKMaskField-iOSTests",
-            dependencies: ["AKMaskField-iOS"]),
+            name: "AKMaskFieldTests",
+            dependencies: ["AKMaskField"]),
     ]
 )
